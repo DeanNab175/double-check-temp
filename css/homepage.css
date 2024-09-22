@@ -64,7 +64,7 @@
 /* Main product section */
 .cp-homepage__col-left {
   background-color: var(--__cp-accent1-color);
-  padding: 7% 10%;
+  padding: 2rem 2rem;
 }
 
 .cp-homepage__col-left .cp-homepage__image-wrapper,
@@ -117,7 +117,7 @@
 }
 
 .cp-homepage__slider {
-  padding: 0 8% 5%;
+  padding: 0 2rem 2rem;
 }
 
 .cp-homepage__home-slider {
@@ -173,7 +173,7 @@
 
 .cp-homepage__recent-content-wrapper {
   background-color: var(--__cp-accent2-color);
-  padding: 5% 10%;
+  padding: 2rem 2rem;
 }
 
 .cp-homepage__recent-content-box {
