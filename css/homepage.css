@@ -1,4 +1,6 @@
 .cp-page {
+  --__cp-accent1-color: #fcc215;
+
   --__cp-font-family-primary: "Quicksand", sans-serif;
   --__cp-font-family-secondary: "Acme", sans-serif;
   font-family: var(--__cp-font-family-primary);
@@ -8,6 +10,10 @@
   display: grid;
   grid-template-columns: 0.65fr 0.35fr;
   gap: 1rem;
+}
+
+.cp-homepage__col-left {
+  background-color: var(--__cp-accent1-color);
 }
 
 .cp-homepage__slider-slide-image img {
