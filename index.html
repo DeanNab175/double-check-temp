@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <div class="container">
+      <main class="cp-checkout cp-page">
+        <div class="cp-checkout__main-grid">
+          <div>
+            <section class="cp-checkout__section cp-checkout__section-delivery">
+              <h2 class="cp-checkout__title">Delivery Information</h2>
+              <div class="cp-checkout__form-wrap">
+                <form action="#">
+                  <div class="cp-checkout__grid-col-2 cp__form-row">
+                    <article class="cp__input-wrap">
+                      <label for="name">Name</label>
+                      <input type="text" name="name" id="name" />
+                    </article>
+                    <article class="cp__input-wrap cp__input--error">
+                      <label for="phone">Phone Number</label>
+                      <input type="text" name="phone" id="phone" />
+                      <span class="cp__message cp__message--error"
+                        >Error message</span
+                      >
+                    </article>
+                  </div>
+
+                  <div class="cp-checkout__grid-col-2 cp__form-row">
+                    <article class="cp__input-wrap">
+                      <label for="country">Country</label>
+                      <select name="country" id="country">
+                        <option value="">Choose a country</option>
+                        <option value="us">US</option>
+                        <option value="eu">EU</option>
+                        <option value="mu">MU</option>
+                      </select>
+                    </article>
+                    <article class="cp__input-wrap">
+                      <label for="addressee">Addressee</label>
+                      <input type="text" name="addressee" id="addressee" />
+                    </article>
+                  </div>
+
+                  <div class="cp-checkout__grid-col-2 cp__form-row">
+                    <article class="cp__input-wrap">
+                      <label for="address1">Address 1</label>
+                      <input type="text" name="address1" id="address1" />
+                    </article>
+                    <article class="cp__input-wrap">
+                      <label for="address2">Address 2</label>
+                      <input type="text" name="address2" id="address2" />
+                    </article>
+                  </div>
+
+                  <div class="cp-checkout__grid-col-3 cp__form-row">
+                    <article class="cp__input-wrap">
+                      <label for="city">City</label>
+                      <input type="text" name="city" id="city" />
+                    </article>
+                    <article class="cp__input-wrap">
+                      <label for="state">State</label>
+                      <input type="text" name="state" id="state" />
+                    </article>
+                    <article class="cp__input-wrap">
+                      <label for="zip">Zip</label>
+                      <input type="text" name="zip" id="zip" />
+                    </article>
+                  </div>
+
+                  <div
+                    class="cp-checkout__actions-btn cp-checkout__actions-btn--align-right"
+                  >
+                    <button type="submit" class="cp__btn">Save</button>
+                  </div>
+                </form>
+              </div>
+            </section>
+
+            <section class="cp-checkout__section cp-checkout__section-shipping">
+              <h2 class="cp-checkout__title">Shipping Information</h2>
+              <div class="cp-checkout__form-wrap">
+                <form action="#">
+                  <label
+                    for="same"
+                    class="cp__form-checkbox cp-checkout__sameas-checkbox"
+                  >
+                    <input type="checkbox" name="same" id="same" />
+                    <span class="cp__form-checkbox-input"></span>
+                    <span class="cp__form-checkbox-label">
+                      Shipping same as delivery
+                    </span>
+                  </label>
+                  <div class="cp-checkout__grid-col-2 cp__form-row">
+                    <article class="cp__input-wrap">
+                      <label for="name">Name</label>
+                      <input type="text" name="name" id="name" />
+                    </article>
+                    <article class="cp__input-wrap">
+                      <label for="phone">Phone Number</label>
+                      <input type="text" name="phone" id="phone" />
+                    </article>
+                  </div>
+
+                  <div class="cp-checkout__grid-col-2 cp__form-row">
+                    <article class="cp__input-wrap">
+                      <label for="country">Country</label>
+                      <input type="text" name="country" id="country" />
+                    </article>
+                    <article class="cp__input-wrap">
+                      <label for="addressee">Addressee</label>
+                      <input type="text" name="addressee" id="addressee" />
+                    </article>
+                  </div>
+
+                  <div class="cp-checkout__grid-col-2 cp__form-row">
+                    <article class="cp__input-wrap">
+                      <label for="address1">Address 1</label>
+                      <input type="text" name="address1" id="address1" />
+                    </article>
+                    <article class="cp__input-wrap">
+                      <label for="address2">Address 2</label>
+                      <input type="text" name="address2" id="address2" />
+                    </article>
+                  </div>
+
+                  <div class="cp-checkout__grid-col-3 cp__form-row">
+                    <article class="cp__input-wrap">
+                      <label for="city">City</label>
+                      <input type="text" name="city" id="city" />
+                    </article>
+                    <article class="cp__input-wrap">
+                      <label for="state">State</label>
+                      <input type="text" name="state" id="state" />
+                    </article>
+                    <article class="cp__input-wrap">
+                      <label for="zip">Zip</label>
+                      <input type="text" name="zip" id="zip" />
+                    </article>
+                  </div>
+
+                  <div
+                    class="cp-checkout__actions-btn cp-checkout__actions-btn--align-right"
+                  >
+                    <button type="submit" class="cp__btn">Save</button>
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+
+          <aside class="cp-checkout__section-order-summary">
+            <h2 class="cp-checkout__title">Order Summary</h2>
+            <div class="cp-checkout__order-details-wrap">
+              <section class="cp-checkout__products">
+                <p>products</p>
+              </section>
+
+              <section class="cp-checkout__total">
+                <div class="cp-checkout__separator"></div>
+
+                <article class="cp-checkout__total-item">
+                  <span class="cp-checkout__total-label">Items(13)</span>
+                  <span class="cp-checkout__total-amount">$330</span>
+                </article>
+
+                <article class="cp-checkout__total-item">
+                  <span class="cp-checkout__total-label">Shipping</span>
+                  <span class="cp-checkout__total-amount">$45.60</span>
+                </article>
+
+                <article
+                  class="cp-checkout__total-item cp-checkout__total-item-subtotal"
+                >
+                  <span class="cp-checkout__total-label">Total before tax</span>
+                  <span class="cp-checkout__total-amount">$1250.32</span>
+                </article>
+
+                <article class="cp-checkout__total-item">
+                  <span class="cp-checkout__total-label">Tax</span>
+                  <span class="cp-checkout__total-amount">$145.60</span>
+                </article>
+
+                <div class="cp-checkout__separator"></div>
+
+                <article
+                  class="cp-checkout__total-item cp-checkout__total-item-total"
+                >
+                  <span class="cp-checkout__total-label">Total</span>
+                  <span class="cp-checkout__total-amount">$2295.92</span>
+                </article>
+
+                <div class="cp-checkout__actions-btn">
+                  <button
+                    type="button"
+                    class="cp__btn cp__btn--order cp__btn--full-width"
+                  >
+                    Place Order
+                  </button>
+                </div>
+              </section>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+
+    <article class="cp-modal">
+      <div class="cp-modal__overlay"></div>
+      <section class="cp-modal__box">
+        <div class="cp-modal__header-wrap">
+          <header class="cp-modal__header">Modal Title</header>
+          <button class="cp-modal__btn-icon cp-modal__close-btn">
+            <svg viewBox="0 0 20 20" fill="none">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.34995 4.02505C5.17223 3.85945 4.93717 3.7693 4.69429 3.77358C4.45142 3.77787 4.21969 3.87626 4.04792 4.04803C3.87615 4.21979 3.77776 4.45152 3.77348 4.6944C3.76919 4.93728 3.85935 5.17233 4.02495 5.35005L8.67495 10.0001L4.02495 14.6501C3.93284 14.7359 3.85896 14.8394 3.80772 14.9544C3.75648 15.0694 3.72893 15.1935 3.72671 15.3194C3.72449 15.4453 3.74764 15.5703 3.79479 15.687C3.84195 15.8038 3.91213 15.9098 4.00115 15.9988C4.09017 16.0879 4.19622 16.1581 4.31295 16.2052C4.42969 16.2524 4.55472 16.2755 4.6806 16.2733C4.80648 16.2711 4.93062 16.2435 5.04562 16.1923C5.16062 16.141 5.26412 16.0672 5.34995 15.9751L9.99995 11.3251L14.6499 15.9751C14.7358 16.0672 14.8393 16.141 14.9543 16.1923C15.0693 16.2435 15.1934 16.2711 15.3193 16.2733C15.4452 16.2755 15.5702 16.2524 15.6869 16.2052C15.8037 16.1581 15.9097 16.0879 15.9987 15.9988C16.0878 15.9098 16.158 15.8038 16.2051 15.687C16.2523 15.5703 16.2754 15.4453 16.2732 15.3194C16.271 15.1935 16.2434 15.0694 16.1922 14.9544C16.1409 14.8394 16.0671 14.7359 15.9749 14.6501L11.3249 10.0001L15.9749 5.35005C16.1405 5.17233 16.2307 4.93728 16.2264 4.6944C16.2221 4.45152 16.1237 4.21979 15.952 4.04803C15.7802 3.87626 15.5485 3.77787 15.3056 3.77358C15.0627 3.7693 14.8277 3.85945 14.6499 4.02505L9.99995 8.67505L5.34995 4.02505Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <main class="cp-modal__body">
+          <section class="cp-modal__order__header-details">
+            <div class="cp-modal__order__detail-wrap">
+              <h1 class="cp-modal__order__title">Order #SMDKDK</h1>
+              <div class="cp-modal__order__detail">
+                <p>Ordered on: <strong>July 18, 2024</strong></p>
+                <p>Status: <strong>Delivered</strong></p>
+              </div>
+            </div>
+
+            <button class="cp-modal__btn-icon cp-modal__order__print-btn">
+              <svg viewBox="0 0 32 32" fill="none">
+                <path
+                  d="M25.5 7H6.625C5.66359 7 4.74156 7.38192 4.06174 8.06174C3.38192 8.74156 3 9.66359 3 10.625V20.5C3 21.4283 3.36875 22.3185 4.02513 22.9749C4.6815 23.6313 5.57174 24 6.5 24H7V26.48C7 27.1483 7.2655 27.7893 7.73809 28.2619C8.21068 28.7345 8.85166 29 9.52 29H22.48C23.1483 29 23.7893 28.7345 24.2619 28.2619C24.7345 27.7893 25 27.1483 25 26.48V24H25.5C26.4283 24 27.3185 23.6313 27.9749 22.9749C28.6313 22.3185 29 21.4283 29 20.5V10.5C29 9.57174 28.6313 8.6815 27.9749 8.02513C27.3185 7.36875 26.4283 7 25.5 7ZM23 26.48C22.9995 26.6178 22.9446 26.7497 22.8471 26.8471C22.7497 26.9446 22.6178 26.9995 22.48 27H9.52C9.38224 26.9995 9.25026 26.9446 9.15285 26.8471C9.05544 26.7497 9.00049 26.6178 9 26.48V16.52C9.00049 16.3822 9.05544 16.2503 9.15285 16.1529C9.25026 16.0554 9.38224 16.0005 9.52 16H22.48C22.6178 16.0005 22.7497 16.0554 22.8471 16.1529C22.9446 16.2503 22.9995 16.3822 23 16.52V26.48ZM24.625 12.995C24.3191 13.0196 24.0129 12.9497 23.748 12.7949C23.483 12.64 23.2719 12.4076 23.1431 12.1289C23.0144 11.8503 22.9742 11.5389 23.0281 11.2367C23.0819 10.9346 23.2271 10.6562 23.4442 10.4392C23.6612 10.2221 23.9396 10.0769 24.2417 10.0231C24.5439 9.96924 24.8553 10.0094 25.1339 10.1381C25.4126 10.2669 25.645 10.478 25.7999 10.743C25.9547 11.0079 26.0246 11.3141 26 11.62C25.9715 11.9752 25.8174 12.3085 25.5655 12.5605C25.3135 12.8124 24.9802 12.9665 24.625 12.995ZM21.5 3H10.5C9.65875 3.00125 8.84601 3.30498 8.21012 3.85573C7.57422 4.40649 7.15758 5.16755 7.03625 6H24.9638C24.8424 5.16755 24.4258 4.40649 23.7899 3.85573C23.154 3.30498 22.3412 3.00125 21.5 3Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </section>
+
+          <div class="cp-modal__separator"></div>
+
+          <section class="cp-modal__order__summary">
+            <article
+              class="cp-modal__order__summary-wrap cp-modal__order__shipping-summary"
+            >
+              <h3>Shipping Address</h3>
+              <address>
+                Xxxxxxx<br />
+                6709 NW 7TH ST EIS-09<br />
+                MIAMI, FL 33125-6067<br />
+                United States
+              </address>
+            </article>
+
+            <article
+              class="cp-modal__order__summary-wrap cp-modal__order__order-summary"
+            >
+              <h3>Order Summary</h3>
+              <div>
+                <article class="cp-modal__order__total-item">
+                  <span class="cp-modal__order__total-label">Items(13)</span>
+                  <span class="cp-modal__order__total-amount">$330</span>
+                </article>
+
+                <article class="cp-modal__order__total-item">
+                  <span class="cp-modal__order__total-label">Shipping</span>
+                  <span class="cp-modal__order__total-amount">$45.60</span>
+                </article>
+
+                <article
+                  class="cp-modal__order__total-item cp-modal__order__total-item-subtotal"
+                >
+                  <span class="cp-modal__order__total-label"
+                    >Total before tax</span
+                  >
+                  <span class="cp-modal__order__total-amount">$1250.32</span>
+                </article>
+
+                <article class="cp-modal__order__total-item">
+                  <span class="cp-modal__order__total-label">Tax</span>
+                  <span class="cp-modal__order__total-amount">$145.60</span>
+                </article>
+
+                <article
+                  class="cp-modal__order__total-item cp-modal__order__total-item-total"
+                >
+                  <span class="cp-modal__order__total-label">Total</span>
+                  <span class="cp-modal__order__total-amount">$2295.92</span>
+                </article>
+              </div>
+            </article>
+          </section>
+
+          <div class="cp-modal__separator"></div>
+
+          <section class="cp-modal__order__product-details">
+            <article class="cp-modal__order__products">Products</article>
+            <article class="cp-modal__order__actions-btns">
+              <button
+                type="button"
+                class="cp-modal__btn cp-modal__btn--md cp-modal__btn--primary"
+              >
+                Track package
+              </button>
+
+              <button
+                type="button"
+                class="cp-modal__btn cp-modal__btn--md cp-modal__btn--primary"
+              >
+                Return or Cancel Order
+              </button>
+            </article>
+          </section>
+        </main>
+      </section>
+    </article>
+  </body>
+</html>

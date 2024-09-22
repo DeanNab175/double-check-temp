@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+
+    <link
+      href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/homepage.css" />
+  </head>
+  <body>
+    <main class="cp-homepage cp-page">
+      <section class="cp-homepage__grid">
+        <article class="cp-homepage__col-left">
+          <div class="cp-homepage__image">
+            <img src="/assets/scale.png" alt="scale image" />
+            <svg width="98" height="98" viewBox="0 0 98 98" fill="none">
+              <rect width="98" height="98" rx="49" fill="white" />
+              <path
+                d="M33.0001 65.8399L20.5801 53.4199L26.2401 47.7599L33.0001 54.5399L56 30.5L61.66 36.16L33.0001 65.8399Z"
+                fill="currentColor"
+              />
+              <path
+                d="M52.9999 65.8399L43.8203 56.66L49.4803 51L52.9999 54.5399L75.9998 30.5L81.6598 36.16L52.9999 65.8399Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+
+          <div class="cp-homepage__content">
+            <h1>Double check</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              est enim, tempor eu mauris vel, varius dignissim felis. Vivamus
+              odio urna, scelerisque vitae libero id, fringilla bibendum odio.
+            </p>
+
+            <div class="cp-homepage__actions-btn">
+              <button type="button" class="cp__btn">Add to cart</button>
+            </div>
+          </div>
+        </article>
+        <article class="cp-homepage__col-right">
+          <div class="cp-homepage__slider">
+            <section
+              id="homeSlider"
+              class="splide"
+              aria-label="Splide Basic HTML Example"
+            >
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="cp-homepage__slider-slide-image">
+                      <img src="/assets/slide1.jpg" alt="integration image" />
+                    </div>
+                    <div class="cp-homepage__slider-slide-content">
+                      <h3>Integration</h3>
+                      <p>
+                        Double-Check's software is independent from the
+                        restaurant's POS to facilitate its quick deployment.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="splide__slide">
+                    <div class="cp-homepage__slider-slide-image">
+                      <img src="/assets/slide1.jpg" alt="integration image" />
+                    </div>
+                    <div class="cp-homepage__slider-slide-content">
+                      <h3>Slide 2 - Integration</h3>
+                      <p>
+                        Double-Check's software is independent from the
+                        restaurant's POS to facilitate its quick deployment.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="splide__slide">
+                    <div class="cp-homepage__slider-slide-image">
+                      <img src="/assets/slide1.jpg" alt="integration image" />
+                    </div>
+                    <div class="cp-homepage__slider-slide-content">
+                      <h3>Slide 3 - Integration</h3>
+                      <p>
+                        Double-Check's software is independent from the
+                        restaurant's POS to facilitate its quick deployment.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+
+          <div class="cp-homepage__recent-content-wrapper">
+            <article
+              class="cp-homepage__recent-content cp-homepage__recent-order"
+            >
+              <h2>Recent order</h2>
+              <p>Order ref: 234tyu56</p>
+              <div class="cp-homepage__recent-status">
+                <span class="cp-homepage__recent-icon"></span>
+                <span class="cp-homepage__recent-text">Awaiting payment</span>
+              </div>
+
+              <button type="button" class="cp__btn">View all orders</button>
+            </article>
+
+            <article
+              class="cp-homepage__recent-content cp-homepage__recent-support"
+            >
+              <h2>Latest support</h2>
+              <p>Order ref: 234tyu56</p>
+              <div class="cp-homepage__recent-status">
+                <span class="cp-homepage__recent-icon"></span>
+                <span class="cp-homepage__recent-text">Awaiting payment</span>
+              </div>
+
+              <button type="button" class="cp__btn">
+                View all support cases
+              </button>
+            </article>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+    <script src="/js/home.js"></script>
+  </body>
+</html>

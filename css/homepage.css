@@ -1,0 +1,15 @@
+.cp-page {
+  --__cp-font-family-primary: "Quicksand", sans-serif;
+  --__cp-font-family-secondary: "Acme", sans-serif;
+  font-family: var(--__cp-font-family-primary);
+}
+
+.cp-homepage__grid {
+  display: grid;
+  grid-template-columns: 0.65fr 0.35fr;
+}
+
+.cp-homepage__slider-slide-image img {
+  max-width: 100%;
+  height: auto;
+}
