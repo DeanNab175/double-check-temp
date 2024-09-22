@@ -43,7 +43,9 @@
             </p>
 
             <div class="cp-homepage__actions-btn">
-              <button type="button" class="cp__btn">Add to cart</button>
+              <button type="button" class="cp__btn cp__btn--accent-hp-dark">
+                Add to cart
+              </button>
             </div>
           </div>
         </article>
@@ -51,7 +53,7 @@
           <div class="cp-homepage__slider">
             <section
               id="homeSlider"
-              class="splide"
+              class="splide cp-homepage__home-slider"
               aria-label="Product features"
             >
               <div class="splide__track">
@@ -100,33 +102,75 @@
           </div>
 
           <div class="cp-homepage__recent-content-wrapper">
-            <article
-              class="cp-homepage__recent-content cp-homepage__recent-order"
-            >
-              <h2>Recent order</h2>
-              <p>Order ref: 234tyu56</p>
-              <div class="cp-homepage__recent-status">
-                <span class="cp-homepage__recent-icon"></span>
-                <span class="cp-homepage__recent-text">Awaiting payment</span>
-              </div>
+            <div class="cp-homepage__recent-content-box">
+              <article
+                class="cp-homepage__recent-content cp-homepage__recent-order"
+              >
+                <h2>Recent order</h2>
+                <p>Order ref: 234tyu56</p>
+                <div class="cp-homepage__recent-status">
+                  <span class="cp-homepage__recent-icon">
+                    <svg viewBox="0 0 15 15" fill="none">
+                      <g clip-path="url(#clip0_183_34)">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.49906 0.9375C7.64814 0.937338 7.79342 0.984565 7.91391 1.07236C8.03439 1.16016 8.12386 1.28398 8.16937 1.42594L11.25 11.0531L12.4556 7.28625C12.5009 7.14427 12.5902 7.02035 12.7105 6.93239C12.8308 6.84443 12.976 6.79698 13.125 6.79688H14.2969C14.4834 6.79688 14.6622 6.87095 14.7941 7.00282C14.9259 7.13468 15 7.31352 15 7.5C15 7.68648 14.9259 7.86532 14.7941 7.99719C14.6622 8.12905 14.4834 8.20313 14.2969 8.20313H13.6378L11.9194 13.5741C11.8738 13.7158 11.7844 13.8394 11.6642 13.927C11.5439 14.0147 11.3989 14.062 11.25 14.062C11.1011 14.062 10.9561 14.0147 10.8358 13.927C10.7156 13.8394 10.6262 13.7158 10.5806 13.5741L7.50469 3.96188L5.35781 10.7588C5.31352 10.8988 5.22648 11.0215 5.1089 11.1095C4.99133 11.1976 4.84912 11.2466 4.70226 11.2497C4.5554 11.2528 4.41126 11.2098 4.29007 11.1268C4.16888 11.0438 4.07673 10.9249 4.02656 10.7869L2.84156 7.52813L2.77594 7.72313C2.72932 7.86308 2.63987 7.98483 2.52025 8.07114C2.40063 8.15745 2.25689 8.20395 2.10938 8.20406H0.703125C0.516645 8.20406 0.337802 8.12998 0.205941 7.99812C0.074079 7.86626 0 7.68742 0 7.50094C0 7.31446 0.074079 7.13562 0.205941 7.00375C0.337802 6.87189 0.516645 6.79781 0.703125 6.79781H1.60313L2.145 5.16938C2.19094 5.03067 2.27894 4.90973 2.39678 4.82335C2.51463 4.73697 2.65645 4.68944 2.80255 4.68738C2.94864 4.68532 3.09175 4.72882 3.21199 4.81184C3.33222 4.89486 3.4236 5.01328 3.47344 5.15063L4.64062 8.36156L6.82969 1.42969C6.8745 1.28718 6.96355 1.16265 7.0839 1.07415C7.20426 0.985654 7.34967 0.93779 7.49906 0.9375Z"
+                          fill="currentColor"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_183_34">
+                          <rect width="15" height="15" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <span class="cp-homepage__recent-text">Awaiting payment</span>
+                </div>
 
-              <button type="button" class="cp__btn">View all orders</button>
-            </article>
+                <button
+                  type="button"
+                  class="cp__btn cp__btn--sm cp__btn--accent-white"
+                >
+                  View all orders
+                </button>
+              </article>
 
-            <article
-              class="cp-homepage__recent-content cp-homepage__recent-support"
-            >
-              <h2>Latest support</h2>
-              <p>Order ref: 234tyu56</p>
-              <div class="cp-homepage__recent-status">
-                <span class="cp-homepage__recent-icon"></span>
-                <span class="cp-homepage__recent-text">Awaiting payment</span>
-              </div>
+              <article
+                class="cp-homepage__recent-content cp-homepage__recent-support"
+              >
+                <h2>Latest support</h2>
+                <p>Order ref: 234tyu56</p>
+                <div class="cp-homepage__recent-status">
+                  <span class="cp-homepage__recent-icon">
+                    <svg viewBox="0 0 15 15" fill="none">
+                      <g clip-path="url(#clip0_183_34)">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.49906 0.9375C7.64814 0.937338 7.79342 0.984565 7.91391 1.07236C8.03439 1.16016 8.12386 1.28398 8.16937 1.42594L11.25 11.0531L12.4556 7.28625C12.5009 7.14427 12.5902 7.02035 12.7105 6.93239C12.8308 6.84443 12.976 6.79698 13.125 6.79688H14.2969C14.4834 6.79688 14.6622 6.87095 14.7941 7.00282C14.9259 7.13468 15 7.31352 15 7.5C15 7.68648 14.9259 7.86532 14.7941 7.99719C14.6622 8.12905 14.4834 8.20313 14.2969 8.20313H13.6378L11.9194 13.5741C11.8738 13.7158 11.7844 13.8394 11.6642 13.927C11.5439 14.0147 11.3989 14.062 11.25 14.062C11.1011 14.062 10.9561 14.0147 10.8358 13.927C10.7156 13.8394 10.6262 13.7158 10.5806 13.5741L7.50469 3.96188L5.35781 10.7588C5.31352 10.8988 5.22648 11.0215 5.1089 11.1095C4.99133 11.1976 4.84912 11.2466 4.70226 11.2497C4.5554 11.2528 4.41126 11.2098 4.29007 11.1268C4.16888 11.0438 4.07673 10.9249 4.02656 10.7869L2.84156 7.52813L2.77594 7.72313C2.72932 7.86308 2.63987 7.98483 2.52025 8.07114C2.40063 8.15745 2.25689 8.20395 2.10938 8.20406H0.703125C0.516645 8.20406 0.337802 8.12998 0.205941 7.99812C0.074079 7.86626 0 7.68742 0 7.50094C0 7.31446 0.074079 7.13562 0.205941 7.00375C0.337802 6.87189 0.516645 6.79781 0.703125 6.79781H1.60313L2.145 5.16938C2.19094 5.03067 2.27894 4.90973 2.39678 4.82335C2.51463 4.73697 2.65645 4.68944 2.80255 4.68738C2.94864 4.68532 3.09175 4.72882 3.21199 4.81184C3.33222 4.89486 3.4236 5.01328 3.47344 5.15063L4.64062 8.36156L6.82969 1.42969C6.8745 1.28718 6.96355 1.16265 7.0839 1.07415C7.20426 0.985654 7.34967 0.93779 7.49906 0.9375Z"
+                          fill="currentColor"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_183_34">
+                          <rect width="15" height="15" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <span class="cp-homepage__recent-text">Awaiting payment</span>
+                </div>
 
-              <button type="button" class="cp__btn">
-                View all support cases
-              </button>
-            </article>
+                <button
+                  type="button"
+                  class="cp__btn cp__btn--sm cp__btn--accent-white"
+                >
+                  View all support cases
+                </button>
+              </article>
+            </div>
           </div>
         </article>
       </section>
